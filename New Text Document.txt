@@ -1,0 +1,11 @@
+Create table type(
+ID_type cher(3) not null,
+type varcher(50),
+primary key (ID_tybe));
+
+create Table book(
+ID_book char(3) not null,
+name varchar(50),
+price number,
+ID_type char(3) not null,
+primary key (ID_book));

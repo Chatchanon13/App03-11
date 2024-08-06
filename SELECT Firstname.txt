@@ -1,0 +1,13 @@
+SELECT Firstname
+FROM employee;
+
+SELECT Address.Province, Address.Postcode
+FROM Address;
+
+SELECT Postcode, Province
+FROM address
+WHERE Province = 'นนทบุรี';
+
+SELECT Province
+FROM Address
+WHERE Province = 'นนทบุรี' or Province = 'นครปฐม';

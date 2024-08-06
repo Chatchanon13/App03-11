@@ -1,0 +1,31 @@
+create table Department(
+ID_depart char(3) not null,
+Department varchar(50),
+primary key (ID_depart));
+
+--------------------------------
+
+create table Employee(
+ID_emp char(3) not null,
+Firtname varchar(30),
+Lastname varchar(30),
+Gender varchar(10),
+salary number,
+ID_depart char(3) not null,
+primary key (ID_emp),
+Foreign key (ID_depart)
+references Department (ID_depart));
+
+---------------------------------
+
+create table Address(
+ID_address char(3) not null,
+ID_emp char(3) not null,
+Address varchar (50),
+Province varchar(50),
+Postcode varchar(50),
+phone number,
+startDate date,
+primary key (ID_address),
+Foreign key (ID_emp)
+references Employee (ID_emp));
